@@ -88,6 +88,7 @@ noted, to a text, CSV or pickle file in the current folder.
 | Section 5.4, Table 7 (feature-selection frequency) | `permutation_and_bootstrap.py` |
 | Section 5.5, Table 8 (TE vs Pearson vs MI edges) | `edge_comparison_and_transfer.py` |
 | Section 5.6, Table 9 (bins, pruning, lag) | `te_bins_sensitivity_final.py`, `pruning_threshold_sensitivity.py`, `lag_sensitivity.py` (bin sweep on a subset: `sweep_te_bins.py`, `stress_test_shortest.py`) |
+| Section 5.6 (undirected-weight convention, curvature edge limit) | `r2_undirected_rule.py` |
 | Section 5.7, Table 10 (calibration, error analysis) | `calibration_and_failure_analysis.py` (reads the pickle above), `inspect_lopo_errors.py` |
 | Section 5.8, Table 11 (robustness) | non-graph baseline `honest_nongraph_baseline.py` (repeated 5-fold version: `r2_baseline_kfold.py`); GCN `gnn_comparison.py`, `gcn_foldsafe_rerun.py`, `r2_gcn_check.py`; `test_extended_features_final.py`, `test_gradient_boosting.py`, `test_label_propagation.py`, `test_similarity_graph.py` |
 | Section 5.10, Tables 13–14 (leakage audit of the first submission) | `test_population_variance_artifact.py`, `foldsafe_ngs.py`, `bagged_foldsafe_pipeline.py`, `test_bagging_mechanism.py`, `test_newhandpd_foldsafe.py`, `confirm_overfitting.py`, `diagnose_below_chance.py`, `verify_bugs.py` |
@@ -133,6 +134,12 @@ These are kept for transparency; no reported result depends on them.
   (`SW_SEED = 0` in `ngs_pipeline_v2.py` and `ngs_p4_newhandpd.py`), so the coefficient
   is reproducible from run to run. Mutual-information edges use `random_state=0`;
   classifiers and CV splits use `random_state=42`.
+* **Undirected conversion.** Efficiency, modularity, algebraic connectivity, the
+  small-world coefficient and the curvature are computed on `G.to_undirected()`. When a
+  pair of features is connected in both directions, NetworkX keeps the weight of the edge
+  added last, i.e. the edge from the higher-indexed to the lower-indexed feature.
+  `r2_undirected_rule.py` repeats the primary analysis with the mean and the maximum of
+  the two weights (manuscript Section 5.6).
 * **Curvature.** The curvature descriptor is an Ollivier–Ricci-type curvature computed on
   the symmetrised graph over at most the first 40 edges, with laziness α = 0.5,
   TE-proportional transition probabilities, and the expected hop distance under the

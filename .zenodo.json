@@ -3,7 +3,7 @@
   "upload_type": "software",
   "description": "Analysis code for the article (Information Sciences, manuscript INS-D-26-7505): within-subject Transfer Entropy graphs of handwriting kinematics, the seven Neuromotor Graph Signature descriptors, nested validation, the leakage audit of the first submission, estimator bias and reliability analyses, native-resolution and multi-task designs, GCN comparison and cross-dataset transfer. Datasets are not included.",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "creators": [
     {"name": "Batri, Krishnan", "affiliation": "Sharda University, Greater Noida, India", "orcid": "0000-0003-4538-1305"},
     {"name": "Lakshmi, S.", "affiliation": "Sharda University, Greater Noida, India"},

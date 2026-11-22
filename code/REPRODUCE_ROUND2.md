@@ -53,6 +53,7 @@ python r2_check_drawings.py
 python r2_phi10_check.py                         # within-PaHaW Phi10 AUC (Section 6.3)
 python r2_baseline_kfold.py                      # non-graph baseline under repeated 5-fold CV
 python r2_table5_age.py                          # Table 5 with age as a covariate
+python r2_undirected_rule.py                     # undirected-weight convention and curvature edge limit (Section 5.6)
 ```
 
 `r2_window_bootstrap.py` is the first version of the window bootstrap, which allowed

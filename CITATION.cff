@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this code, please cite the article and this software release."
 title: "Neuromotor Interaction Graphs: code for 'Inferring Functional Motor Control Networks from Handwriting Dynamics for Explainable Parkinson's Disease Assessment'"
 type: software
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-11-22"
 license: MIT
 repository-code: "https://github.com/batri80/neuromotor-interaction-graphs"
