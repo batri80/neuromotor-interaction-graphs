@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article and this software release."
+title: "Neuromotor Interaction Graphs: code for 'Inferring Functional Motor Control Networks from Handwriting Dynamics for Explainable Parkinson's Disease Assessment'"
+type: software
+version: "1.0.0"
+date-released: "2026-11-22"
+license: MIT
+repository-code: "https://github.com/batri80/neuromotor-interaction-graphs"
+authors:
+  - family-names: Batri
+    given-names: Krishnan
+    email: batri.k@sharda.ac.in
+    orcid: "https://orcid.org/0000-0003-4538-1305"
+    affiliation: "Sharda University, Greater Noida, India"
+  - family-names: Lakshmi
+    given-names: S.
+    affiliation: "Sharda University, Greater Noida, India"
+  - family-names: Mahesh
+    given-names: T. R.
+    affiliation: "JAIN (Deemed-to-be University), Bangalore, India"
+  - family-names: Shankar
+    given-names: Achyut
+    affiliation: "Bennett University, Greater Noida, India"
+  - family-names: Onteddu
+    given-names: Abhishake Reddy
+    affiliation: "DPR Solutions Inc, Chicago, IL, USA"
+  - family-names: Viriyasitavat
+    given-names: Wattana
+    affiliation: "Chulalongkorn University, Thailand"
+keywords:
+  - Parkinson's disease
+  - handwriting dynamics
+  - transfer entropy
+  - graph signal analysis
+  - estimator reliability

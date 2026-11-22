@@ -1,0 +1,16 @@
+# datasets (not redistributed)
+code/PaHaW/
+code/healthy/
+code/patient/
+code/third_dataset/
+# generated outputs
+code/*.txt
+code/*.csv
+code/*.pkl
+code/*.png
+code/*.pdf
+code/ngs_outputs*/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
